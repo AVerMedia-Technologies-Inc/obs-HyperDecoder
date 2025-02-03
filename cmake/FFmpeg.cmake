@@ -7,6 +7,7 @@ endif()
 if (APPLE)
     set(extra_obs_prebuilt_arch "universal")
 endif()
+set(extra_obs_prebuilt_deps "obs-deps-${_obs_prebuilt_version}")
 
 set(extra_obs_deps_dir "${current_project_dir}/.deps")
 set(extra_obs_prebuilt_deps_dir "${extra_obs_deps_dir}/${extra_obs_prebuilt_deps}-${extra_obs_prebuilt_arch}")

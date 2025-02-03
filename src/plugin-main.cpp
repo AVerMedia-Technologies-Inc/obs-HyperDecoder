@@ -49,9 +49,9 @@ bool obs_module_load(void)
 	obs_log(LOG_INFO, "version %s (%s)", PLUGIN_VERSION, MY_BUILT_TIME_STR);
 
 	//obs_frontend_add_event_callback(obs_frontend_event_handler, nullptr);
-	
+
 	RegisterDShowSource();
-	
+
 	return true;
 }
 
